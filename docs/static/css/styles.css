@@ -3,8 +3,8 @@
   background: #FDE2CB;
   color: #147282; }
 
-::selection,
-::-moz-selection {
+::-moz-selection,
+::selection {
   background: #FDE2CB;
   color: #147282; }
 
@@ -13,7 +13,7 @@ html {
   padding: 0; }
 
 body {
-  background: #147282 url(static/img/contours.svg) center center no-repeat;
+  background: #147282 url("static/img/contours.svg") center center no-repeat;
   background-size: cover;
   color: #FDE2CB;
   font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
@@ -33,10 +33,10 @@ main {
 @media all and (min-width: 640px) {
   main {
     display: grid;
-    grid-template-columns: .5fr 2fr 2fr;
+    grid-template-columns: 0.5fr 2fr 2fr;
     grid-template-rows: auto;
-    grid-column-gap: .5rem;
-    grid-row-gap: .5rem;
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.5rem;
     grid-template-areas: "logo nav header" "aside content content" "aside cta cta" "footer legal legal"; } }
 
 @media all and (min-width: 860px) {
@@ -107,7 +107,7 @@ a:hover:before {
 
 .head {
   grid-area: logo;
-  margin: 1rem 0 2rem 0; }
+  margin: 1rem 0 2rem; }
 
 @media all and (min-width: 500px) {
   .head {
@@ -128,11 +128,11 @@ a:hover:before {
 
 .content {
   grid-area: content;
-  margin: 0 1.3rem 0 1.3rem; }
+  margin: 0 1.3rem; }
 
 @media all and (min-width: 500px) {
   .content {
-    margin: 0 2.3rem 0 2.3rem; } }
+    margin: 0 2.3rem; } }
 
 @media all and (min-width: 640px) {
   .content {
@@ -154,10 +154,10 @@ a:hover:before {
   background: #147282;
   font-weight: bold;
   color: #FDE2CB;
-  border: .1rem solid #FDE2CB;
+  border: 0.1rem solid #FDE2CB;
   text-decoration: none;
   font-size: 1rem;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   line-height: 1.5;
   display: block;
   text-align: center;
@@ -176,9 +176,7 @@ a:hover:before {
 
 .btn:hover {
   background: #FDE2CB;
-  color: #147282;
-  margin-top: -.1em;
-  margin-bottom: .1em; }
+  color: #147282; }
 
 .legal {
   margin-top: 3rem;
